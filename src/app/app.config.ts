@@ -11,6 +11,15 @@ export const appConfig: ApplicationConfig = {
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideRouter(routes, withComponentInputBinding()),
     provideHttpClient(),
-    provideQueryClient(new QueryClient()),
+    provideQueryClient(
+      new QueryClient({
+        defaultOptions: {
+          queries: {
+            refetchOnWindowFocus: false,
+            staleTime: 1000 * 60 * 60,
+          },
+        },
+      }),
+    ),
   ],
 };
