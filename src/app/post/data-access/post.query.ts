@@ -17,7 +17,7 @@ export const postQueryOptions = (id: number) => {
   const postService = inject(PostService);
 
   return queryOptions({
-    queryKey: ['test', id],
+    queryKey: [postKeys.detail(id)],
     queryFn: () => lastValueFrom(postService.post(id)),
   });
 };
