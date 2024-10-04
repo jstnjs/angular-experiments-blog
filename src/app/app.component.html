@@ -1,1 +1,37 @@
+<header class="bg-gray-800 text-white p-4">
+  <div class="container mx-auto flex justify-between items-center">
+    <div class="flex items-center">
+      <a
+        routerLink="/"
+        class="flex items-center hover:text-blue-300 transition-colors duration-200"
+      >
+        <span class="text-2xl font-bold mr-2">📝</span>
+        <span class="text-xl font-semibold">Example</span>
+      </a>
+    </div>
+    <nav>
+      <ul class="flex space-x-4">
+        <li>
+          <a
+            routerLink="/todos"
+            class="hover:text-blue-300 transition-colors duration-200"
+            routerLinkActive="text-blue-300"
+          >
+            Todos
+          </a>
+        </li>
+        <li>
+          <a
+            routerLink="/posts"
+            class="hover:text-blue-300 transition-colors duration-200"
+            routerLinkActive="text-blue-300"
+          >
+            Posts
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
 <router-outlet />
