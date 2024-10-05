@@ -9,7 +9,14 @@ import { RouterLink } from '@angular/router';
   imports: [RouterLink],
   template: `
     <div class="container mx-auto px-4 py-8">
-      <h1 class="text-3xl font-bold mb-6">Posts Overview</h1>
+      <div class="flex justify-between items-center mb-8">
+        <h1 class="text-3xl font-bold">Posts Overview</h1>
+        <a
+          routerLink="/posts/create"
+          class="bg-blue-500 text-white px-4 py-2 rounded-md"
+          >Create Post</a
+        >
+      </div>
       @if (postsQuery.isLoading()) {
         <p class="text-gray-600">Loading posts...</p>
       }

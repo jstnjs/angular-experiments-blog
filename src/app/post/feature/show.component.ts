@@ -22,7 +22,7 @@ import { DatePipe, NgIf } from '@angular/common';
         <article class="bg-white shadow-lg rounded-lg overflow-hidden">
           <div class="p-8">
             <h1 class="text-3xl font-bold mb-4 text-gray-800">
-              {{ postQuery.data().title }}
+              {{ postQuery.data()?.title }}
             </h1>
             <div class="flex items-center mb-6">
               <img
@@ -36,7 +36,7 @@ import { DatePipe, NgIf } from '@angular/common';
               </div>
             </div>
             <div class="prose max-w-none mb-8">
-              <p>{{ postQuery.data().body }}</p>
+              <p>{{ postQuery.data()?.body }}</p>
             </div>
             <div class="flex justify-between items-center">
               <a
@@ -46,7 +46,7 @@ import { DatePipe, NgIf } from '@angular/common';
                 ← Back to Posts
               </a>
               <span class="text-sm text-gray-500"
-                >Post ID: {{ postQuery.data().id }}</span
+                >Post ID: {{ postQuery.data()?.id }}</span
               >
             </div>
           </div>
