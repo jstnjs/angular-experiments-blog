@@ -4,7 +4,7 @@ import { injectQuery } from '@tanstack/angular-query-experimental';
 import { JsonPipe, NgClass } from '@angular/common';
 
 @Component({
-  selector: 'tsa-todo',
+  selector: 'app-todo',
   standalone: true,
   imports: [JsonPipe, NgClass],
   template: `

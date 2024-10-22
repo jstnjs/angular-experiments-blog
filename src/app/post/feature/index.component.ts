@@ -4,7 +4,7 @@ import { postsQueryOptions } from '../data-access/post.query';
 import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'tqa-post-index',
+  selector: 'app-post-index',
   standalone: true,
   imports: [RouterLink],
   template: `

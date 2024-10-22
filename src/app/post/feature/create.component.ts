@@ -4,7 +4,7 @@ import { PostService } from '../data-access/post.service';
 import { createPostMutation } from '../data-access/post.mutation';
 
 @Component({
-  selector: 'tq-post-create',
+  selector: 'app-post-create',
   standalone: true,
   imports: [ReactiveFormsModule],
   changeDetection: ChangeDetectionStrategy.OnPush,

@@ -8,7 +8,7 @@ import { ActivatedRoute, RouterLink } from '@angular/router';
 import { DatePipe, NgIf } from '@angular/common';
 
 @Component({
-  selector: 'tqa-post-show',
+  selector: 'app-post-show',
   standalone: true,
   imports: [RouterLink, NgIf, DatePipe],
   template: `
