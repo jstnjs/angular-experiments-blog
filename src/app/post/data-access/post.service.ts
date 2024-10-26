@@ -9,19 +9,14 @@ export class PostService {
   http = inject(HttpClient);
 
   posts() {
-    return this.http.get<Post[]>('https://jsonplaceholder.typicode.com/posts');
+    return this.http.get<Post[]>('https://api.example.com/posts');
   }
 
   post(id: number) {
-    return this.http.get<Post>(
-      `https://jsonplaceholder.typicode.com/posts/${id}`,
-    );
+    return this.http.get<Post>(`https://api.example.com/posts/${id}`);
   }
 
   createPost(post: CreatePost) {
-    return this.http.post<Post>(
-      'https://jsonplaceholder.typicode.com/posts',
-      post,
-    );
+    return this.http.post<Post>('https://api.example.com/posts', post);
   }
 }
