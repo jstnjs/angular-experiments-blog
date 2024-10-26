@@ -1,7 +1,7 @@
 import { http, HttpResponse } from 'msw';
 import { todos } from './todo.data';
 
-export const todoHandlers = [
+export const todoHandler = [
   http.get('https://api.example.com/todos', () => {
     return HttpResponse.json(todos);
   }),

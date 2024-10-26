@@ -1,8 +1,11 @@
 import { http, HttpResponse } from 'msw';
 import { posts } from './post.data';
 import { Post } from '../../app/post/data-access/post.type';
+import { addScenarios } from '../scenario.util';
+import { postScenario } from './post.scenario';
 
-export const postHandlers = [
+export const postHandler = [
+  ...addScenarios(postScenario),
   http.get('https://api.example.com/posts', () => {
     return HttpResponse.json(posts);
   }),
