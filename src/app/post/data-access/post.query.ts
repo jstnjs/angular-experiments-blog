@@ -24,9 +24,9 @@ export const postQueryOptions = (id: number) => {
   return queryOptions({
     queryKey: [postKeys.detail(id)],
     queryFn: () => lastValueFrom(postService.post(id)),
-    initialData: () => {
-      const posts = queryClient.getQueryData<Post[]>(postKeys.all);
-      return posts?.find((d) => d.id === id); // check if data is cached otherwise fetch
-    },
+    // initialData: () => {
+    //   const posts = queryClient.getQueryData<Post[]>(postKeys.all);
+    //   return posts?.find((d) => d.id === id); // check if data is cached otherwise fetch
+    // },
   });
 };
