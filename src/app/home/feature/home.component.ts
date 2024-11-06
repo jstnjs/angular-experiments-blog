@@ -11,7 +11,7 @@ import { RouterLink } from '@angular/router';
       <div
         class="max-w-3xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden"
       >
-        <!-- <div class="p-8">
+        <div class="p-8">
           <h1 class="text-3xl font-bold mb-6 text-gray-800">
             Welcome to My Angular Playground
           </h1>
@@ -69,7 +69,7 @@ import { RouterLink } from '@angular/router';
               Explore Todos
             </a>
           </div>
-        </div> -->
+        </div>
       </div>
     </div>
   `,

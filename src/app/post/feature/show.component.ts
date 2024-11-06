@@ -1,10 +1,7 @@
-import { Component, computed, input, numberAttribute } from '@angular/core';
-import {
-  injectQuery,
-  injectQueryClient,
-} from '@tanstack/angular-query-experimental';
+import { Component, input, numberAttribute } from '@angular/core';
+import { injectQuery } from '@tanstack/angular-query-experimental';
 import { postQueryOptions } from '../data-access/post.query';
-import { ActivatedRoute, RouterLink } from '@angular/router';
+import { RouterLink } from '@angular/router';
 import { DatePipe, NgIf } from '@angular/common';
 
 @Component({

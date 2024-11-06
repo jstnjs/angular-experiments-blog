@@ -1,6 +1,5 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
-import { PostService } from '../data-access/post.service';
 import { createPostMutation } from '../data-access/post.mutation';
 
 @Component({
