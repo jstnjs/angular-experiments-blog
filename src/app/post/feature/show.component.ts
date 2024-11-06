@@ -1,4 +1,4 @@
-import { Component, input, numberAttribute } from '@angular/core';
+import { Component, computed, input, numberAttribute } from '@angular/core';
 import {
   injectQuery,
   injectQueryClient,
@@ -65,8 +65,6 @@ import { DatePipe, NgIf } from '@angular/common';
   `,
 })
 export class PostShowComponent {
-  queryClient = injectQueryClient();
   id = input.required<number, unknown>({ transform: numberAttribute });
-
   postQuery = injectQuery(() => postQueryOptions(this.id()));
 }

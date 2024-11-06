@@ -1,7 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { injectQuery } from '@tanstack/angular-query-experimental';
 import { postsQueryOptions } from '../data-access/post.query';
 import { RouterLink } from '@angular/router';
+import { HttpClient } from '@angular/common/http';
+import { delay, lastValueFrom, of } from 'rxjs';
+import { PostService } from '../data-access/post.service';
+import { toSignal } from '@angular/core/rxjs-interop';
 
 @Component({
   selector: 'app-post-index',
@@ -17,6 +21,7 @@ import { RouterLink } from '@angular/router';
           >Create Post</a
         >
       </div>
+
       @if (postsQuery.isLoading()) {
         <p class="text-gray-600">Loading posts...</p>
       }

@@ -54,8 +54,6 @@ import { createPostMutation } from '../data-access/post.mutation';
 })
 export class PostCreateComponent {
   fb = inject(FormBuilder);
-  postService = inject(PostService);
-
   createPostMutation = createPostMutation();
 
   form = this.fb.nonNullable.group({
