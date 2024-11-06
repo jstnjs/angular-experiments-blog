@@ -17,6 +17,7 @@ import { RouterLink } from '@angular/router';
           >Create Post</a
         >
       </div>
+
       @if (postsQuery.isLoading()) {
         <p class="text-gray-600">Loading posts...</p>
       }

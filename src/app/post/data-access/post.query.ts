@@ -1,6 +1,5 @@
 import {
   injectQueryClient,
-  QueryClient,
   queryOptions,
 } from '@tanstack/angular-query-experimental';
 import { postKeys } from './post.key';

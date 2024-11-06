@@ -9,12 +9,10 @@ export class TodoService {
   http = inject(HttpClient);
 
   todos() {
-    return this.http.get<Todo[]>('https://jsonplaceholder.typicode.com/todos');
+    return this.http.get<Todo[]>('https://api.example.com/todos');
   }
 
   todo(id: number) {
-    return this.http.get<Todo>(
-      `https://jsonplaceholder.typicode.com/todos/${id}`,
-    );
+    return this.http.get<Todo>(`https://api.example.com/todos/${id}`);
   }
 }

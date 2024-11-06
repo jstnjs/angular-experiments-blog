@@ -1,7 +1,5 @@
 import { inject } from '@angular/core';
-
 import { CreatePost } from './post.type';
-
 import { PostService } from './post.service';
 import { lastValueFrom } from 'rxjs';
 import {
