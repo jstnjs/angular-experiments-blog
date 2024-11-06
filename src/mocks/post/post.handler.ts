@@ -11,6 +11,11 @@ export const postHandler = [
   }),
   http.get('https://api.example.com/posts/:id', ({ params }) => {
     const post = posts.find((post) => post.id === Number(params['id']));
+
+    if (!post) {
+      return new HttpResponse(null, { status: 404 });
+    }
+
     return HttpResponse.json(post);
   }),
   http.post('https://api.example.com/posts', async ({ request }) => {
