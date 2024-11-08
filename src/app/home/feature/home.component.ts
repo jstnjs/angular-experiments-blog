@@ -51,6 +51,13 @@ import { RouterLink } from '@angular/router';
               href="https://x.com/j1sc2s"
               class="text-blue-600 hover:text-blue-800 font-medium"
               >&#64;j1sc2s</a
+            >
+            and on BlueSky as
+            <a
+              target="_blank"
+              href="https://bsky.app/profile/justindev.bsky.social"
+              class="text-blue-600 hover:text-blue-800 font-medium"
+              >&#64;justindev.bsky.social</a
             >.
           </p>
 
