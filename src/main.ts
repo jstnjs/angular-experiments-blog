@@ -4,12 +4,16 @@ import { AppComponent } from './app/app.component';
 import { isDevMode } from '@angular/core';
 
 async function prepareApp() {
-  if (isDevMode()) {
-    const { worker } = await import('./browser');
-    return worker.start({ onUnhandledRequest: 'bypass' });
-  }
+  /**
+   * Don't do this. I just want to use msw in production.
+   * Also include the mockServiceWorker.js only in development.
+   */
+  // if (isDevMode()) {
+  const { worker } = await import('./browser');
+  return worker.start({ onUnhandledRequest: 'bypass' });
+  // }
 
-  return Promise.resolve();
+  // return Promise.resolve();
 }
 
 prepareApp().then(() => {

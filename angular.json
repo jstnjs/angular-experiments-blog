@@ -22,7 +22,8 @@
               {
                 "glob": "**/*",
                 "input": "public"
-              }
+              },
+              "src/mockServiceWorker.js"
             ],
             "styles": ["src/styles.css"],
             "scripts": []
@@ -46,14 +47,7 @@
             "development": {
               "optimization": false,
               "extractLicenses": false,
-              "sourceMap": true,
-              "assets": [
-                {
-                  "glob": "**/*",
-                  "input": "public"
-                },
-                "src/mockServiceWorker.js"
-              ]
+              "sourceMap": true
             }
           },
           "defaultConfiguration": "production"
