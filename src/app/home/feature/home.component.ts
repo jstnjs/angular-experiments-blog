@@ -9,9 +9,9 @@ import { RouterLink } from '@angular/router';
   template: `
     <div class="container mx-auto px-4 py-8">
       <div
-        class="max-w-3xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden"
+        class="md:max-w-3xl mx-auto bg-white md:shadow-lg rounded-lg overflow-hidden"
       >
-        <div class="p-8">
+        <div class="md:p-8">
           <h1 class="text-3xl font-bold mb-6 text-gray-800">
             Welcome to My Angular Playground
           </h1>
@@ -57,7 +57,7 @@ import { RouterLink } from '@angular/router';
           <div class="mt-8">
             <a
               routerLink="/posts"
-              class="inline-block bg-blue-500 text-white px-6 py-3 mr-4 rounded-md hover:bg-blue-600 transition-colors duration-300"
+              class="inline-block bg-blue-500 text-white px-6 py-3 mr-4 mb-4 rounded-md hover:bg-blue-600 transition-colors duration-300"
             >
               Explore Posts
             </a>
