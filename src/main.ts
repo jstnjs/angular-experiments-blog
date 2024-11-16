@@ -5,7 +5,7 @@ import { isDevMode } from '@angular/core';
 
 async function prepareApp() {
   if (isDevMode()) {
-    const { worker } = await import('./mocks/browser');
+    const { worker } = await import('./browser');
     return worker.start({ onUnhandledRequest: 'bypass' });
   }
 

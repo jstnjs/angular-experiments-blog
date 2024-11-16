@@ -44,20 +44,13 @@ import { RouterLink } from '@angular/router';
           </p>
 
           <p class="mb-6 text-gray-600">
-            And if you're interested in my opinions, you can find me on Twitter
-            (X) as
+            And if you're interested in my opinions, you can find me on BlueSky
+            as
             <a
               target="_blank"
-              href="https://x.com/j1sc2s"
+              href="https://bsky.app/profile/iamjustin.dev"
               class="text-blue-600 hover:text-blue-800 font-medium"
-              >&#64;j1sc2s</a
-            >
-            and on BlueSky as
-            <a
-              target="_blank"
-              href="https://bsky.app/profile/justindev.bsky.social"
-              class="text-blue-600 hover:text-blue-800 font-medium"
-              >&#64;justindev.bsky.social</a
+              >&#64;iamjustin.dev</a
             >.
           </p>
 
