@@ -3,11 +3,10 @@ import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
 import { createPostMutation } from '../data-access/post.mutation';
 
 @Component({
-  selector: 'app-post-create',
-  standalone: true,
-  imports: [ReactiveFormsModule],
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  template: `
+    selector: 'app-post-create',
+    imports: [ReactiveFormsModule],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    template: `
     <div class="max-w-2xl mx-auto mt-8 p-6 bg-white rounded-lg shadow-md">
       <h2 class="text-2xl font-bold mb-6">Create New Post</h2>
       <form [formGroup]="form" (ngSubmit)="onSubmit()" class="space-y-4">
@@ -49,7 +48,7 @@ import { createPostMutation } from '../data-access/post.mutation';
         </button>
       </form>
     </div>
-  `,
+  `
 })
 export class PostCreateComponent {
   fb = inject(FormBuilder);

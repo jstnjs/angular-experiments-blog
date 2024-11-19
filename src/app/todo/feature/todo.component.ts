@@ -5,8 +5,7 @@ import { JsonPipe, NgClass } from '@angular/common';
 
 @Component({
   selector: 'app-todo',
-  standalone: true,
-  imports: [JsonPipe, NgClass],
+  imports: [NgClass],
   template: `
     <div class="max-w-md mx-auto mt-10 p-6 bg-white rounded-lg shadow-lg">
       <h1 class="text-3xl font-bold mb-6 text-gray-800">Todo List</h1>

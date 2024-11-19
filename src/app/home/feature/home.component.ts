@@ -2,11 +2,10 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-home',
-  standalone: true,
-  imports: [RouterLink],
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  template: `
+    selector: 'app-home',
+    imports: [RouterLink],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    template: `
     <div class="container mx-auto px-4 py-8">
       <div
         class="md:max-w-3xl mx-auto bg-white md:shadow-lg rounded-lg overflow-hidden"
@@ -72,6 +71,6 @@ import { RouterLink } from '@angular/router';
         </div>
       </div>
     </div>
-  `,
+  `
 })
 export class HomeComponent {}

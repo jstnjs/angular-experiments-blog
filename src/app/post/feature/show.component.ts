@@ -6,8 +6,7 @@ import { DatePipe, NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-post-show',
-  standalone: true,
-  imports: [RouterLink, NgIf, DatePipe],
+  imports: [RouterLink],
   template: `
     <div class="container mx-auto px-4 py-8">
       @if (postQuery.isLoading()) {

@@ -4,10 +4,9 @@ import { postsQueryOptions } from '../data-access/post.query';
 import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-post-index',
-  standalone: true,
-  imports: [RouterLink],
-  template: `
+    selector: 'app-post-index',
+    imports: [RouterLink],
+    template: `
     <div class="container mx-auto px-4 py-8">
       <div class="flex justify-between items-center mb-8">
         <h1 class="text-3xl font-bold">Posts Overview</h1>
@@ -43,7 +42,7 @@ import { RouterLink } from '@angular/router';
         <p class="text-red-600">Error loading posts. Please try again later.</p>
       }
     </div>
-  `,
+  `
 })
 export class PostIndexComponent {
   postsQuery = injectQuery(() => postsQueryOptions());
