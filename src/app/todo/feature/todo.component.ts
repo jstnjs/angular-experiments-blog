@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { todosQueryOptions } from '../data-access/todo.query';
 import { injectQuery } from '@tanstack/angular-query-experimental';
-import { JsonPipe, NgClass } from '@angular/common';
+import { NgClass } from '@angular/common';
 
 @Component({
   selector: 'app-todo',
